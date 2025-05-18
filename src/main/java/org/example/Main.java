@@ -26,12 +26,10 @@ public class Main {
 //        км. Вычислите и выведите на экран сколько вам нужно заплатить за топливо для
 //        поездки.
         double gasolinePrice = 1.2;
-        double distance = 100;
-        double gasolineConsumption = 8;
-        double consumptionPerKilometer = distance / gasolineConsumption;
-        double gasoLinePriceKilometer = gasolinePrice * consumptionPerKilometer;
         double distanceToCity = 120;
-        double costOfTrip = distanceToCity * gasoLinePriceKilometer;
+        double gasolineConsumptionPer100km = 8;
+        double fuelNeeded = (gasolineConsumptionPer100km / 100) * distanceToCity;
+        double costOfTrip = fuelNeeded * gasolinePrice;
         System.out.println("Стоимость поездки = " + costOfTrip);
     }
 }
