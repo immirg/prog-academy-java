@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class Group {
     private String groupName;
-    Student[] student = new Student[10];
+    private Student[] student = new Student[10];
 
     public void setGroupName(String groupName) {
         this.groupName = groupName;
